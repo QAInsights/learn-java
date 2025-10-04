@@ -1,0 +1,47 @@
+package org.qainsights.Lists;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListDemo {
+    static void main() {
+        List<String> fruits = new ArrayList<>(List.of("apple", "orange", "banana", "kiwi"));
+
+        fruits.add("watermelon");
+
+        for (String fruit : fruits) {
+            IO.println(fruit);
+        }
+
+        fruits.remove("watermelon");
+        for (String fruit : fruits) {
+            IO.println(fruit);
+        }
+
+        fruits.addFirst("===papaya");
+
+        for (String fruit : fruits) {
+            IO.println(fruit);
+        }
+
+        fruits.addLast("papayassss");
+
+        for (String fruit : fruits) {
+            IO.println(fruit);
+        }
+
+        fruits.removeLast();
+        for (String fruit : fruits) {
+            IO.println(fruit);
+        }
+
+        fruits.removeAll(fruits);
+        fruits.add("New one");
+
+        if (!fruits.isEmpty()) {
+            IO.println(fruits.getFirst());
+            IO.println("Not empty");
+        }
+    }
+
+}

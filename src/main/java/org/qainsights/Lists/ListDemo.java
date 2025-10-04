@@ -3,7 +3,7 @@ package org.qainsights.Lists;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListDemo {
+class ListDemo {
     static void main() {
         List<String> fruits = new ArrayList<>(List.of("apple", "orange", "banana", "kiwi"));
 
@@ -38,10 +38,12 @@ public class ListDemo {
         fruits.removeAll(fruits);
         fruits.add("New one");
 
-        if (!fruits.isEmpty()) {
-            IO.println(fruits.getFirst());
-            IO.println("Not empty");
-        }
+        IO.println(fruits.getFirst());
+        IO.println("Not empty");
+
+        
     }
 
 }
+
+

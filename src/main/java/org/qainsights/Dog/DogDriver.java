@@ -1,7 +1,10 @@
 package org.qainsights.Dog;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DogDriver {
-    static void main() {
+    static void main(String[] args) {
         Dog d1 = new Dog();
         System.out.println(d1.getName());
         System.out.println(d1.getNumberOfBarks());
@@ -41,5 +44,8 @@ public class DogDriver {
         else
             System.out.println("false");
 
+//        String[] fruits = new String[]{"A", "B", "C"};
+        ArrayList<String> fruits = new ArrayList<>(List.of("Apple"));
+        System.out.println(fruits.getFirst());
     }
 }

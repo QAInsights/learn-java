@@ -1,4 +1,4 @@
-package org.qainsights.Lists;
+package org.qainsights.lists;
 
 import java.util.ArrayList;
 import java.util.List;

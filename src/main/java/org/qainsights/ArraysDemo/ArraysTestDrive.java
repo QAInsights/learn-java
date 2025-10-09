@@ -1,4 +1,4 @@
-package org.qainsights.ArraysDemo;
+package org.qainsights.arraysdemo;
 
 public class ArraysTestDrive {
     static void main() {

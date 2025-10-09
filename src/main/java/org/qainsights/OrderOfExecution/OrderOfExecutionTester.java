@@ -4,11 +4,6 @@ public class OrderOfExecutionTester {
 
     private final String name;
 
-    {
-        IO.println("Hello World");
-    }
-
-
     public OrderOfExecutionTester(String name) {
         IO.println("Constructors initializing");
         this.name = name;

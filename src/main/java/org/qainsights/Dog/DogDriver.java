@@ -1,4 +1,4 @@
-package org.qainsights.Dog;
+package org.qainsights.dog;
 
 import java.util.ArrayList;
 import java.util.List;

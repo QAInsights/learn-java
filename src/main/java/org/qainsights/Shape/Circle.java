@@ -1,4 +1,4 @@
-package org.qainsights.Shape;
+package org.qainsights.shape;
 
 public class Circle {
 

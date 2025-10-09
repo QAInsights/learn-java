@@ -1,7 +1,7 @@
-package org.qainsights.Shape;
+package org.qainsights.shape;
 
 public class Shape {
-    static void main() {
+    public static void main() {
         Circle c = new Circle(1, 2);
         c.rotate();
         System.out.println("Circling");

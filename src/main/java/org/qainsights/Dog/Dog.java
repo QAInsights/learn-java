@@ -1,4 +1,4 @@
-package org.qainsights.Dog;
+package org.qainsights.dog;
 
 public class Dog {
     private int numberOfBarks;

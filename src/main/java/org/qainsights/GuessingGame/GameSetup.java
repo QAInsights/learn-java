@@ -1,4 +1,4 @@
-package org.qainsights.GuessingGame;
+package org.qainsights.guessinggame;
 
 public class GameSetup {
     private int numberOfRetries = 3;

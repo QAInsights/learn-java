@@ -1,4 +1,4 @@
-package org.qainsights.GuessingGame;
+package org.qainsights.guessinggame;
 
 public class GameDriver {
     static void main(String[] args) {

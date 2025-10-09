@@ -1,4 +1,4 @@
-package org.qainsights.Animal;
+package org.qainsights.animal;
 
 class AnimalDriver {
     static void main() {

@@ -1,4 +1,4 @@
-package org.qainsights.GuessingGame;
+package org.qainsights.guessinggame;
 
 import java.util.Scanner;
 

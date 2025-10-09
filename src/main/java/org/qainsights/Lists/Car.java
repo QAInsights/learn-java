@@ -1,4 +1,4 @@
-package org.qainsights.Lists;
+package org.qainsights.lists;
 
 class Car {
     String name;

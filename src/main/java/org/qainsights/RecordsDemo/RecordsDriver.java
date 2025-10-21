@@ -1,4 +1,4 @@
-package org.qainsights.RecordsDemo;
+package org.qainsights.recordsdemo;
 
 public class RecordsDriver {
     static void main() {

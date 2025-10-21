@@ -1,4 +1,4 @@
-package org.qainsights.RecordsDemo;
+package org.qainsights.recordsdemo;
 
 public record RecordsDemo(String name, int age) {
 

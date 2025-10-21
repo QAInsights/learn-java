@@ -1,5 +1,7 @@
 package org.qainsights.stringdemo;
 
+import sun.misc.Unsafe;
+
 public class StringDemos {
     static void main() {
         String s1 = "Hello";
@@ -130,5 +132,59 @@ public class StringDemos {
 
         newname.replace(5, 11, " World");
         System.out.println(newname);
+
+        System.out.println(newname.reverse());
+        String ss = newname.toString();
+        System.out.println(ss);
+
+        var x = "Hello";
+        var y = " Hello".trim();
+        System.out.println(x.equals(y)); // content based true
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(x == y); // reference based false
+        System.out.println(x.hashCode() == y.hashCode());
+        System.out.println(System.identityHashCode(x) + " vs " + System.identityHashCode(y));
+
+        var v = "Hello";
+        var vv = new StringBuilder("Hello");
+        System.out.println(v.toString() == vv.toString()); // Reference based false
+        System.out.println(v.toString().equals(vv.toString())); // Content based true
+        System.out.println(v.contentEquals(vv)); // Content based true
+
+        var c = "Hello"; // Literal
+        var d = "Hello"; // Literal
+        System.out.println(c == d); // true because of String pool
+
+        var cc = new String("Hello"); // Object
+        var dd = new String("Hello"); // Object
+        // String is immutable and literals are pooled.
+        System.out.println(cc == dd); // false because it is an object points to different mem - not in String pool
+
+        var f = 1;
+        var g = 1;
+        System.out.println(f == g);
+
+        Integer aa = 127;  // Cached integer
+        Integer bb = 127;  // Reuses cached value
+        System.out.println(aa == bb);  // true (cached values)
+
+        Integer ccc = 128;  // Outside cache range
+        Integer ddd = 128;  // Creates new object
+        System.out.println(ccc == ddd);  // false (different objects)
+        System.out.println(ccc.equals(ddd));  // true (same value)
+
+        var singleString = "hello world";
+        var concat = "hello";
+        concat += "world";
+        System.out.println(singleString == concat); // false
+
+        var e = "Hello";
+        var ee = new String("Hello").intern();
+        System.out.println(e == ee); // true because of intern()
+
+        // f t f t
+
+
     }
 }

@@ -1,6 +1,9 @@
 package org.qainsights.inheritancedemo;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cat extends Domestic {
     public String name;
     public Animals animal;
@@ -38,5 +41,11 @@ public class Cat extends Domestic {
 
     public int getAge() {
         return age;
+    }
+
+    public <T extends Animals> void getBreeds(ArrayList<T> list) {
+        for (Animals a : list) {
+            System.out.println("Breed " + a.name);
+        }
     }
 }

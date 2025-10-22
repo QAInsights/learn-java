@@ -1,6 +1,8 @@
 package org.qainsights.inheritancedemo;
 
 
+import java.util.ArrayList;
+
 public class InheritanceDriver {
 
     public static void main(String[] args) {
@@ -31,6 +33,12 @@ public class InheritanceDriver {
         d.setAge(11);
         d.roam();
         System.out.println(d.name + " is " + d.getAge() + " years old");
+
+        ArrayList<Animals> animalList = new ArrayList<>();
+        animalList.add(a);
+        animalList.add(d);
+        System.out.println(animalList);
+        c.getBreeds(animalList);
 
 
     }

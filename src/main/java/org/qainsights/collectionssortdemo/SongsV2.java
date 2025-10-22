@@ -2,7 +2,7 @@ package org.qainsights.collectionssortdemo;
 
 import java.util.List;
 
-public class SongsV2 {
+public class SongsV2 implements Comparable<SongsV2> {
     private String title;
     private String artist;
     private int bpm;
@@ -11,6 +11,17 @@ public class SongsV2 {
         this.title = title;
         this.artist = artist;
         this.bpm = bpm;
+    }
+
+
+    @Override
+    public int hashCode() {
+        return title.hashCode();
+    }
+
+    public boolean equals(SongsV2 other) {
+        SongsV2 o = (SongsV2) other;
+        return title.equals(o.getTitle());
     }
 
     public String getTitle() {
@@ -27,5 +38,10 @@ public class SongsV2 {
 
     public String toString() {
         return title;
+    }
+
+    @Override
+    public int compareTo(SongsV2 o) {
+        return title.compareTo(o.getTitle());
     }
 }

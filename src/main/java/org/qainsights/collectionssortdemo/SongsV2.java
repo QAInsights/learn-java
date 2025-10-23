@@ -13,16 +13,17 @@ public class SongsV2 implements Comparable<SongsV2> {
         this.bpm = bpm;
     }
 
-
-    @Override
     public int hashCode() {
         return title.hashCode();
     }
 
-    public boolean equals(SongsV2 other) {
-        SongsV2 o = (SongsV2) other;
-        return title.equals(o.getTitle());
+    public boolean equals(Object obj) {
+        if (obj instanceof SongsV2 other) {
+            return this.title.equals(other.getTitle());
+        }
+        return false;
     }
+
 
     public String getTitle() {
         return title;

@@ -1,4 +1,4 @@
-package org.qainsights.ReferencesDemo;
+package org.qainsights.referencesdemo;
 
 public class Book {
     String name;

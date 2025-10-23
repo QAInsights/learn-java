@@ -40,5 +40,40 @@ public class HashCodeDemo {
         System.out.println(o1.hashCode() != o2.hashCode()); // true
         System.out.println(o1.equals(o2)); // false
 
+        Book b1 = new Book("ABCD");
+        Book b2 = new Book("ABCDE");
+        System.out.println(b1.hashCode()); // hashCode is based on memory address
+        System.out.println(b2.hashCode());
+
+
+        System.out.println(b1 == b2); // false - because they are different objects in memory
+        System.out.println(b1.equals(b2)); // true - because we have overridden the equals method to compare title
+        System.out.println(b1.hashCode() == b2.hashCode()); // true - because we have overridden the hashCode method to return the hashCode of title
+
+        Book b3 = new Book("Aa");
+        Book b4 = new Book("BB");
+
+        System.out.println(b3.hashCode());           // 2112
+        System.out.println(b4.hashCode());           // 2112 - SAME!
+        System.out.println(b3.hashCode() == b4.hashCode());  // TRUE
+        System.out.println(b3.equals(b4));           // FALSE - different content
+    }
+
+    class Book {
+        String title;
+
+        Book(String title) {
+            this.title = title;
+        }
+
+        public int hashCode() {
+            return this.title.hashCode();
+        }
+
+        public boolean equals(Book anotherBook) {
+            return title.equals(anotherBook.title);
+        }
+
+
     }
 }

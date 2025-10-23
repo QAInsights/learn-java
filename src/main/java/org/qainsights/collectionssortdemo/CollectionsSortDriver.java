@@ -3,7 +3,7 @@ package org.qainsights.collectionssortdemo;
 import java.util.*;
 
 public class CollectionsSortDriver {
-    static void main() {
+    public static void main() {
 //        List<String> getSongs = MockingSongs.getSongs();
 //        System.out.println(getSongs);
 //
@@ -43,20 +43,22 @@ public class CollectionsSortDriver {
         System.out.println("After putting in Set...");
         System.out.println(s3);
 
-        List<SongsV2> v1 = MockSongsV2.getSongsV2();
-        List<SongsV2> v2 = MockSongsV2.getSongsV2();
 
-        System.out.println(v1.getLast().hashCode());
-        System.out.println(v2.getLast().hashCode());
-
-        int a = 11;
-        int b = 11;
-
-        System.out.println(Integer.toString(a).hashCode() + "-"
-                + Integer.toString(b).hashCode());
-
-        System.out.println(Integer.toString(a).equals(Integer.toString(b)));
-        System.out.println(a == b);
+//
+//        List<SongsV2> v1 = MockSongsV2.getSongsV2();
+//        List<SongsV2> v2 = MockSongsV2.getSongsV2();
+//
+//        System.out.println(v1.getLast().hashCode());
+//        System.out.println(v2.getLast().hashCode());
+//
+//        int a = 11;
+//        int b = 11;
+//
+//        System.out.println(Integer.toString(a).hashCode() + "-"
+//                + Integer.toString(b).hashCode());
+//
+//        System.out.println(Integer.toString(a).equals(Integer.toString(b)));
+//        System.out.println(a == b);
 
     }
 }

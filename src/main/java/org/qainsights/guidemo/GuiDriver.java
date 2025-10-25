@@ -47,7 +47,7 @@ public class GuiDriver implements ActionListener  {
     public void actionPerformed(ActionEvent e) {
         jButton.setText("Clicked " + ++counter);
 
-        if (e.getActionCommand() == "Reset"){
+        if ("Reset".equals(e.getActionCommand())){
             System.out.println("Reset");
             jButton.setText("OK");
             counter = 0;

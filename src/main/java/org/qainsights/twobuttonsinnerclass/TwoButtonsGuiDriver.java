@@ -1,6 +1,7 @@
 package org.qainsights.twobuttonsinnerclass;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -36,35 +37,20 @@ public class TwoButtonsGuiDriver {
         panel.add(okButton);
         panel.add(cancelButton);
         
-        OkButtonListener okButtonListener = new OkButtonListener();
-        okButton.addActionListener(okButtonListener);
+        okButton.addActionListener(event -> {
+            okButton.setText("OK Clicked " + ++okCounter);
+            okButton.setBackground(Color.BLUE);
+        });
 
-        CancelButtonListener cancelButtonListener = new CancelButtonListener();
-        cancelButton.addActionListener(cancelButtonListener);
+        cancelButton.addActionListener(event -> cancelButton.setText("Cancel clicked " + ++cancelCounter));
 
         jFrame.getContentPane().add(BorderLayout.EAST, okButton);
         jFrame.getContentPane().add(BorderLayout.SOUTH, cancelButton);
 
         jFrame.setSize(300, 300);
-        jFrame.setVisible(true);        
+        jFrame.setVisible(true);
 
     }
 
-    class OkButtonListener implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            okButton.setText("OK clicked " + ++okCounter);
-        }
-
-    }
-
-    class CancelButtonListener implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            cancelButton.setText("Cancel Clicked " + ++cancelCounter);            
-        }
-        
-    }   
+     
 }

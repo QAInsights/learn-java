@@ -10,38 +10,38 @@ class ListDemo {
         fruits.add("watermelon");
 
         for (String fruit : fruits) {
-            IO.println(fruit);
+            System.out.println(fruit);
         }
 
         fruits.remove("watermelon");
         for (String fruit : fruits) {
-            IO.println(fruit);
+            System.out.println(fruit);
         }
 
         fruits.addFirst("===papaya");
 
         for (String fruit : fruits) {
-            IO.println(fruit);
+            System.out.println(fruit);
         }
 
         fruits.addLast("papayassss");
 
         for (String fruit : fruits) {
-            IO.println(fruit);
+            System.out.println(fruit);
         }
 
         fruits.removeLast();
         for (String fruit : fruits) {
-            IO.println(fruit);
+            System.out.println(fruit);
         }
 
         fruits.removeAll(fruits);
         fruits.add("New one");
 
-        IO.println(fruits.getFirst());
-        IO.println("Not empty");
+        System.out.println(fruits.getFirst());
+        System.out.println("Not empty");
 
-        
+
     }
 
 }

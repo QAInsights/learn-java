@@ -1,14 +1,14 @@
-package org.qainsights.OrderOfExecution;
+package org.qainsights.orderofexecution;
 
 public class OrderOfExecutionTester {
 
     private final String name;
 
     public OrderOfExecutionTester(String name) {
-        IO.println("Constructors initializing");
+        System.out.println("Constructors initializing");
         this.name = name;
         {
-            IO.println("Instantiating OrderOfExecutionTester");
+            System.out.println("Instantiating OrderOfExecutionTester");
         }
     }
 

@@ -1,6 +1,7 @@
 package org.qainsights.newsongs;
 
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -12,6 +13,25 @@ public class SongsDriver {
                 .filter(song -> song.getGenre().contains("Rock"));
         List<Song> res = st.collect(Collectors.toList());
         System.out.println(res);
+
+        List<Song> beatles = new SongsDriver().getSongs();
+        List<Song> st2 = beatles.stream()
+                .filter(song -> song.getArtist().equals("The Beatles"))
+                .filter(song -> song.getTitle().startsWith("C"))
+                .filter(song -> song.getYear() > 1995)
+                .collect(Collectors.toList());
+        System.out.println(st2);
+
+        // List all the genres
+        List<Song> allGenres = new SongsDriver().getSongs();
+
+        String allGenresStream = allGenres.stream()
+                .map(sg -> sg.getTitle())
+                .collect(Collectors.joining("-", "A", "G"));
+        System.out.println(allGenresStream);
+
+        Function<Song, String> gg = sf -> sf.getGenre();
+        System.out.println(gg.apply(new Song("test", "ter", "e", 123333, 12333)));
 
 
     }

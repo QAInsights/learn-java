@@ -1,4 +1,4 @@
-package org.qainsights.OrderOfExecution;
+package org.qainsights.orderofexecution;
 
 public class OrderDriver {
     static void main() {

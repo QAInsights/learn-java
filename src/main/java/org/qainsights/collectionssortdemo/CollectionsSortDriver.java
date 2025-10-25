@@ -3,7 +3,7 @@ package org.qainsights.collectionssortdemo;
 import java.util.*;
 
 public class CollectionsSortDriver {
-    public static void main() {
+    public static void main(String[] args) {
 //        List<String> getSongs = MockingSongs.getSongs();
 //        System.out.println(getSongs);
 //

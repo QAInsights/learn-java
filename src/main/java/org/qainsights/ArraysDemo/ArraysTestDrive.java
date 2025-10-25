@@ -23,7 +23,7 @@ public class ArraysTestDrive {
 
         for (String s : colors) {
             if (s.length() == 3) {
-                IO.println(s);
+                System.out.println(s);
             }
         }
 
@@ -38,7 +38,7 @@ public class ArraysTestDrive {
         System.out.println("Total dogs are " + dogs.length);
 
         for (Dog eachDog : dogs) {
-            IO.println(eachDog.name + " " + eachDog.color + " " + eachDog.hashCode());
+            System.out.println(eachDog.name + " " + eachDog.color + " " + eachDog.hashCode());
             eachDog.getPrice();
         }
     }

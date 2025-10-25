@@ -43,7 +43,7 @@ public class Dog {
 
     public void bark() {
         for (int i = 0; i < numberOfBarks; i++) {
-            IO.println("Woof..." + "from " + getName());
+            System.out.println("Woof..." + "from " + getName());
         }
     }
 }

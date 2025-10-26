@@ -2,7 +2,6 @@ package org.qainsights.inheritancedemo;
 
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Cat extends Domestic {
     public String name;

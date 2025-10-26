@@ -1,4 +1,4 @@
-package org.qainsights.ProtectedDemo;
+package org.qainsights.protecteddemo;
 
 public class BakeryRecipe extends FamilyRecipe {
     void getBakeryRecipe() {

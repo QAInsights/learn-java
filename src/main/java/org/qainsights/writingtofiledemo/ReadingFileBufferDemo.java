@@ -1,6 +1,5 @@
 package org.qainsights.writingtofiledemo;
 
-import javax.sound.midi.Soundbank;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -41,14 +40,16 @@ public class ReadingFileBufferDemo {
             throw new RuntimeException(e);
         }
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a string and press Enter key: ");
-        String str = scanner.nextLine();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Enter a string and press Enter key: ");
+            String str = scanner.nextLine();
 
-        for (String s : str.contains(";") ? str.split("; ") : str.split(" ")) {
-            if (!s.isEmpty()) {
-                System.out.println(s);
+            for (String s : str.contains(";") ? str.split("; ") : str.split(" ")) {
+                if (!s.isEmpty()) {
+                    System.out.println(s);
+                }
             }
         }
+
     }
 }

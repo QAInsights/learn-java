@@ -1,8 +1,6 @@
 package org.qainsights.arraylistdemo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class ArrayListDemo {
     static void main() {

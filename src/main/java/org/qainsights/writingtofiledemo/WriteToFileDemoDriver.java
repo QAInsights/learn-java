@@ -1,8 +1,6 @@
 package org.qainsights.writingtofiledemo;
 
-import java.io.File;
 import java.io.FileWriter;
-import java.io.IOError;
 import java.io.IOException;
 
 public class WriteToFileDemoDriver {

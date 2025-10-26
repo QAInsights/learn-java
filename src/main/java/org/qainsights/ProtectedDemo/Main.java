@@ -1,4 +1,4 @@
-package org.qainsights.ProtectedDemo;
+package org.qainsights.protecteddemo;
 
 public class Main {
     static void main() {

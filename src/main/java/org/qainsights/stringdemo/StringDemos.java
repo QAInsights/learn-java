@@ -1,7 +1,5 @@
 package org.qainsights.stringdemo;
 
-import sun.misc.Unsafe;
-
 public class StringDemos {
     static void main() {
         String s1 = "Hello";

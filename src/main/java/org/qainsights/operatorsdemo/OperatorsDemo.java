@@ -1,8 +1,5 @@
 package org.qainsights.operatorsdemo;
 
-import java.io.FilterOutputStream;
-import java.util.function.Predicate;
-
 public class OperatorsDemo {
     void main(String[] args) {
 //        int i = 1;

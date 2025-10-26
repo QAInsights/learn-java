@@ -1,7 +1,5 @@
 package org.qainsights.collectionssortdemo;
 
-import java.util.List;
-
 public class SongsV2 implements Comparable<SongsV2> {
     private String title;
     private String artist;

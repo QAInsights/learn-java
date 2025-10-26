@@ -1,8 +1,6 @@
 package org.qainsights.writingtofiledemo;
 
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.nio.file.attribute.*;
 

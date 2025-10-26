@@ -1,9 +1,14 @@
 package org.qainsights.writingtofiledemo;
 
+import javax.sound.midi.Soundbank;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ReadingFileBufferDemo {
 
@@ -23,6 +28,27 @@ public class ReadingFileBufferDemo {
             e.printStackTrace();
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+
+        // Using streams
+        AtomicInteger atomicInteger = new AtomicInteger(0);
+        try {
+            Files.lines(Paths.get("myfile.txt")).forEach((String line) ->
+            {
+                System.out.println(line + ": " + (atomicInteger.getAndIncrement() + 1));
+            });
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string and press Enter key: ");
+        String str = scanner.nextLine();
+
+        for (String s : str.contains(";") ? str.split("; ") : str.split(" ")) {
+            if (!s.isEmpty()) {
+                System.out.println(s);
+            }
         }
     }
 }

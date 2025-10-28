@@ -1,10 +1,8 @@
 package org.qainsights.serversidechat;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.net.InetSocketAddress;
 import java.nio.channels.Channels;
 import java.nio.channels.ServerSocketChannel;

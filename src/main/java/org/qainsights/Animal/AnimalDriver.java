@@ -3,7 +3,7 @@ package org.qainsights.animal;
 import org.qainsights.operatorsdemo.OperatorsDemo;
 
 class AnimalDriver {
-    static void main() {
+    public static void main(String[] args) {
         System.out.println("Hello World");
         Animal a = new Animal("Cat");
         System.out.println(a.getNameAndAge());

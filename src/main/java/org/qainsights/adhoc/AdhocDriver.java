@@ -8,6 +8,8 @@ public class AdhocDriver {
         AdhocDriver ad = new AdhocDriver();
         ad.go();
         ad.goToString();
+
+
     }
 
     private void go() {
@@ -25,7 +27,7 @@ public class AdhocDriver {
 
         System.out.println(fruits[fruits.length - 1]);
 
-        String[] veggies = { "Tomato", "Beans", "Carrot" };
+        String[] veggies = {"Tomato", "Beans", "Carrot"};
 
         for (String string : veggies) {
             System.out.println("Veggies are " + string);

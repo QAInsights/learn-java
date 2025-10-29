@@ -37,5 +37,60 @@ public class Hello {
 
         // int z = __111; //invalid
 
+        double pi = 3.14;
+        System.out.println(pi);
+
+        long l = 151512232323L;
+        System.out.println(l);
+
+        float pi2 = 3.14f; // add f
+        float pi3 = 3.14F; // add F
+        System.out.println(pi2);
+        System.out.println(pi3);
+
+        char ini = 'N';
+        System.out.println(ini);
+
+        char t = '\u0102';
+        System.out.println(t);
+
+        String name = "NaveenKumar";
+        System.out.println(name);
+
+        boolean x = true;
+        System.out.println(x);
+
+        int hx = 0X1F;
+        System.err.println(hx); // 31
+
+        int hx1 = 0xFF;
+        System.err.println(hx1); // 255
+
+        byte bb = -128; // byte is 8 bits from -128 to 127
+        System.err.println(bb);
+
+        short xs = 1;
+        System.err.println(xs);
+
+        int kk = xs;
+        kk = 146523234;
+        int ll = (int) xs;
+        System.out.println(xs);
+
+        short r = (short) 111211111;
+        int rr = (int) r;
+        System.out.println(r);
+
+        int t1 = (int) r;
+        System.err.println(t1);
+
+        byte bbb = -127;
+        int kkk = (int) bbb;
+        System.out.println(bbb);
+
+        short dd = 32005;
+        byte ff = (byte) dd;
+        System.out.println(ff);
+
     }
 }

@@ -18,12 +18,20 @@ public class ChatDriverConcurrency {
 
 //        Thread.sleep(1111);
 
-        ExecutorService ex = Executors.newFixedThreadPool(3);
+        ExecutorService ex = Executors.newFixedThreadPool(30);
 
-        for (int i = 0; i < 5; i++) {
-            ex.execute(() -> chatList.add(new Chat("again", LocalDateTime.now())));
+        for (int i = 0; i < 30; i++) {
+            ex.execute(() -> {
+                System.out.println(Thread.currentThread().getName());
+                chatList.add(new Chat("Hi", LocalDateTime.now()));
+            });
             ex.execute(() -> System.out.println(chatList));
             ex.execute(() -> System.out.println(chatList));
+            ex.execute(() -> chatList.add(new Chat("there", LocalDateTime.now())));
+            ex.execute(() -> System.out.println(chatList));
+            ex.execute(() -> chatList.add(new Chat("Hi again", LocalDateTime.now())));
+
+
         }
 
         ex.shutdown();

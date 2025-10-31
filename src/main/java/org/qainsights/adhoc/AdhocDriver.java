@@ -8,8 +8,6 @@ public class AdhocDriver {
         AdhocDriver ad = new AdhocDriver();
         ad.go();
         ad.goToString();
-
-
     }
 
     private void go() {
@@ -36,3 +34,5 @@ public class AdhocDriver {
     }
 
 }
+
+

@@ -1,5 +1,7 @@
 package org.qainsights.adhoc;
 
+import org.qainsights.chapter2.Hello;
+
 public class AdhocDriver {
 
     final int MAX_LENGTH = 5;
@@ -8,6 +10,9 @@ public class AdhocDriver {
         AdhocDriver ad = new AdhocDriver();
         ad.go();
         ad.goToString();
+
+        HelloClass h = new HelloClass("Hello");
+        System.out.println(h.toString());
     }
 
     private void go() {

@@ -5,16 +5,14 @@ public class Hello {
     static int j;
 
     public static void main(String[] args) {
-        int i;
-        i = 1;
-        System.out.println(i++); // prints 1, then increment 2
-        System.out.println(i); // 2
-        System.out.println(++i); // increment 2, prints 3
-        System.out.println(i); // 3
+        int i = 1;
+        System.out.println(i++);
+        System.out.println(i);
+        System.out.println(++i);
+        System.out.println(i);
 
         System.out.println(j);
 
-        // for
         FOR_LOOP: for (j = 1; j <= 5; j++) {
             System.out.println(j);
             continue FOR_LOOP;
@@ -29,13 +27,11 @@ public class Hello {
             }
         }
 
-        int num = 100_000___000;
-        System.out.println(num); // valid
+        int num = 100_000_000;
+        System.out.println(num);
 
-        int k = 111____1111;
-        System.out.println(k); // valid
-
-        // int z = __111; //invalid
+        int k = 1111111;
+        System.out.println(k);
 
         double pi = 3.14;
         System.out.println(pi);
@@ -43,8 +39,8 @@ public class Hello {
         long l = 151512232323L;
         System.out.println(l);
 
-        float pi2 = 3.14f; // add f
-        float pi3 = 3.14F; // add F
+        float pi2 = 3.14f;
+        float pi3 = 3.14F;
         System.out.println(pi2);
         System.out.println(pi3);
 
@@ -61,12 +57,12 @@ public class Hello {
         System.out.println(x);
 
         int hx = 0X1F;
-        System.err.println(hx); // 31
+        System.err.println(hx);
 
         int hx1 = 0xFF;
-        System.err.println(hx1); // 255
+        System.err.println(hx1);
 
-        byte bb = -128; // byte is 8 bits from -128 to 127
+        byte bb = -128;
         System.err.println(bb);
 
         short xs = 1;
@@ -74,15 +70,12 @@ public class Hello {
 
         int kk = xs;
         kk = 146523234;
-        int ll = (int) xs;
         System.out.println(xs);
 
         short r = (short) 111211111;
         int rr = (int) r;
         System.out.println(r);
-
-        int t1 = (int) r;
-        System.err.println(t1);
+        System.err.println(rr);
 
         byte bbb = -127;
         int kkk = (int) bbb;
@@ -91,6 +84,5 @@ public class Hello {
         short dd = 32005;
         byte ff = (byte) dd;
         System.out.println(ff);
-
     }
 }
